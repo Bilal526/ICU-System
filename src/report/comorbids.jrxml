@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2d2b9ef2-de82-4fd7-9efa-ebaebb0e923a">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="hospno" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select * from patient_comorbid where hospno = $P{hospno};]]>
+	</queryString>
+	<field name="hospno" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="patient_comorbid_id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<detail>
+		<band height="22" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="22" uuid="70ca54d4-d65b-40e9-b9a5-537cad0cfb91"/>
+				<textFieldExpression><![CDATA[$F{patient_comorbid_id}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

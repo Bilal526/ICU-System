@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="90abbfc1-986f-414e-a3b3-b6c861649f00">
+	<property name="ireport.zoom" value="1.1"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="hospno" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select * from patientinfo  where hospno=$P{hospno};]]>
+	</queryString>
+	<field name="hospno" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="doaInHosp" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="doaInIcu" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="time" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="code" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="age" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sex" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="weight" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bmi" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="admittedfrom" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="LOS" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pdiagnosis" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="surgery" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="surgerydate" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="redodate" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ICUoutcome" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dodischarge" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sdiagnosis" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="redo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="lifeSustainingTherapyWithdrawn" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="reason" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="reAdmission" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="reasonofreadmission" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="readmissionDate" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="hospOutcome" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ApacheII" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="SAPS" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="qSOFA" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nutritionriskscore" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DOD" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="airwaytype" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="intubationat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="extubation" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="extubationtime" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="reintubation" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="selfextubation" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vent" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ventilationdays" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="vap" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cvpdays" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="clabsi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="complications" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="pcauseofdeath" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Brainscan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="repeatscan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="height" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Escore" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Mscore" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Bscore" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Rscore" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="totalscore" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<group name="hospno">
+		<groupExpression><![CDATA[$F{hospno}]]></groupExpression>
+	</group>
+	<title>
+		<band height="68">
+			<staticText>
+				<reportElement x="3" y="0" width="550" height="57" uuid="151404c2-d01a-4cda-96bf-470136bb9d14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Surgical ICU I]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="57" width="550" height="1" uuid="9995e55b-898e-45fa-aabf-1e1f517c408d"/>
+			</line>
+		</band>
+	</title>
+	<detail>
+		<band height="696">
+			<staticText>
+				<reportElement x="0" y="11" width="49" height="20" uuid="d6a78c5f-b78f-48b5-b20f-fce5c96720ca"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hospital #]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="49" y="11" width="60" height="20" uuid="5d1d141c-ee5d-49d9-868d-af9efb7b0f3f"/>
+				<textFieldExpression><![CDATA[$F{hospno}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="122" y="11" width="66" height="20" uuid="221dfc3b-f3d9-4ee9-b489-afa58811ee82"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[DOA InHosp:]]></text>
+			</staticText>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement x="189" y="11" width="42" height="20" uuid="657765c1-0eff-410f-9759-105862c19fc6">
+					<printWhenExpression><![CDATA[(!$F{doaInHosp}.toString().equals("1970-01-01"))]]></printWhenExpression>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{doaInHosp}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="247" y="11" width="59" height="20" uuid="ec063f1d-dba5-4da2-a741-f70ba33bc831"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[DOA In ICU:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="306" y="11" width="42" height="20" uuid="90cd6fbb-1e6d-447b-8598-63e9721e029d">
+					<printWhenExpression><![CDATA[(!$F{doaInIcu}.toString().equals("1970-01-01"))]]></printWhenExpression>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{doaInIcu}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="357" y="11" width="33" height="20" uuid="3d5a9fe4-4d38-445a-a196-215e9eb060f2"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Time]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="390" y="11" width="54" height="20" uuid="8f5e137d-3715-4546-9da9-5fd9ce5fd9e5"/>
+				<textFieldExpression><![CDATA[$F{time}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="453" y="11" width="45" height="20" uuid="d0ddd697-3182-44ad-aae2-7d279afb4638"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hr Code:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="498" y="11" width="55" height="20" uuid="9ec3d972-5d6b-41f2-9e04-6b00fb8cdb61"/>
+				<textFieldExpression><![CDATA[$F{code}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="31" width="31" height="20" uuid="6f6b3adc-cff0-4d01-9daa-9949e00f17c9"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Age:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="32" y="31" width="28" height="20" uuid="7deb2b76-4a43-4b85-b224-adace0edb941"/>
+				<textFieldExpression><![CDATA[$F{age}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="56" y="31" width="31" height="20" uuid="bbe7a558-b011-4bec-b814-fb5fa0ff1ef5"/>
+				<text><![CDATA[yr]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="91" y="31" width="23" height="20" uuid="9ae55d93-41a9-4f5b-b3f6-9352d35ed571"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sex:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="114" y="31" width="35" height="20" uuid="d3bbe642-5eec-4da3-bd0b-1f6fa961667f"/>
+				<textFieldExpression><![CDATA[$F{sex}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="155" y="31" width="36" height="20" uuid="5cd0dfd0-00de-4cdc-aa8a-0d8fffe78b08"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Weight]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="196" y="31" width="28" height="20" uuid="ff89b302-be9f-4407-9f0a-02b7779c6979"/>
+				<textFieldExpression><![CDATA[$F{weight}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="224" y="31" width="21" height="20" uuid="d8c25564-649c-4fae-a935-5b10a52364bf"/>
+				<text><![CDATA[kg]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="251" y="31" width="40" height="20" uuid="7dee99a9-5b4a-4a51-875a-6183fed643ef"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Height]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="291" y="31" width="27" height="20" uuid="2e8f13db-22f2-4c62-a569-424bd12e7518"/>
+				<textFieldExpression><![CDATA[$F{height}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="318" y="31" width="21" height="20" uuid="7cd8454f-7b51-4aaf-a270-2c54d687168f"/>
+				<text><![CDATA[cm]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="348" y="31" width="24" height="20" uuid="70e98c24-4ae0-4841-af73-ddaffc8dfdc9"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[BMI]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="372" y="31" width="54" height="20" uuid="414d790f-cf47-47f0-95f9-f9aa7e5b8d08"/>
+				<textFieldExpression><![CDATA[$F{bmi}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="430" y="31" width="96" height="20" uuid="d16149cf-9a0b-4e60-bd6b-b37a664ba682"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ADMITTED FROM:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="525" y="31" width="30" height="20" uuid="0d98de99-5d00-469d-b6ad-05b308f1aac3"/>
+				<textFieldExpression><![CDATA[$F{admittedfrom}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="51" width="96" height="20" uuid="3f978624-092f-41da-91f5-2044aa200f2c"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ADMITTED TYPE:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="188" y="51" width="96" height="20" uuid="e29f7d99-67ad-4332-b382-83b754edfa86"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Comorbids:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="165" width="100" height="20" uuid="22cd1084-cd59-4fa1-b840-ba4d1ecfd71c"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DIAGNOSIS: ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="100" y="185" width="453" height="50" uuid="6ca95793-16cc-4c4d-a4df-7cea15b07109"/>
+				<textFieldExpression><![CDATA[$F{pdiagnosis}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="38" y="235" width="59" height="20" uuid="caa67935-6740-4347-97bf-94860e9d46fd"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[secondary:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="100" y="235" width="453" height="50" uuid="7e7475ff-acab-40a8-89d1-91376c68baa5"/>
+				<textFieldExpression><![CDATA[$F{sdiagnosis}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="38" y="185" width="62" height="20" uuid="65feced7-da9b-4bf5-b776-c7f55fcc6fe2"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[primary:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="288" width="49" height="20" uuid="c677b32b-08b2-43fa-a20e-becbe0cb31c0"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Surgery]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="49" y="288" width="378" height="20" uuid="df7b9527-5855-4371-8686-2a243b7997d6"/>
+				<textFieldExpression><![CDATA[$F{surgery}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="427" y="288" width="41" height="20" uuid="e9bb6ae7-f14f-4e64-b74c-3f9a24c73340"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="468" y="288" width="42" height="20" uuid="1e0b6653-177f-4872-9e8f-8ac65fe21748">
+					<printWhenExpression><![CDATA[(!$F{surgerydate}.toString().equals("1970-01-01"))]]></printWhenExpression>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{surgerydate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="308" width="48" height="20" uuid="0c35f2ce-eec5-41f8-af35-547e8e178d33"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Redo]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="49" y="308" width="377" height="20" uuid="039d1f7b-ee16-474d-988a-6099bb1dc168"/>
+				<textFieldExpression><![CDATA[$F{redo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="427" y="308" width="41" height="20" uuid="2ca111be-217a-43f8-92b2-88b9672ffed6"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="468" y="308" width="42" height="20" uuid="d5c12ce3-2295-46d1-9151-e5744ccc00ad">
+					<printWhenExpression><![CDATA[(!$F{redodate}.toString().equals("1970-01-01"))]]></printWhenExpression>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{redodate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="329" width="86" height="20" uuid="7d889cfd-32f5-479a-a81a-1815e4e8270c"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ICU OUTCOME:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="91" y="329" width="77" height="20" uuid="b25d5edb-dfbe-4556-b83e-a2c280362aaa"/>
+				<textFieldExpression><![CDATA[$F{ICUoutcome}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="211" y="329" width="69" height="20" uuid="31f9c74d-42c2-49f7-8b14-644f565a44eb"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Do discharge]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="278" y="329" width="100" height="20" uuid="f479cd75-625a-48b3-a842-2ef27c36c53a">
+					<printWhenExpression><![CDATA[(!$F{dodischarge}.toString().equals("1970-01-01"))]]></printWhenExpression>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{dodischarge}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="427" y="329" width="24" height="20" uuid="9a4961f3-bbf4-47e5-b13f-3e99592d5f24"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[LOS:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="454" y="329" width="38" height="20" uuid="8d40d946-8c68-4ad4-b6dc-1f062b11a843"/>
+				<textFieldExpression><![CDATA[$F{LOS}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="492" y="329" width="24" height="20" uuid="bbb82f85-a183-44ee-ac90-4e20500aa367"/>
+				<text><![CDATA[days]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="349" width="178" height="20" uuid="916277b0-86e0-4b37-a141-c07bd2eaa679"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Was life sustaining therapy withdrawn:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="178" y="349" width="33" height="20" uuid="4634277c-9d3c-44ca-9161-1eadd4145f58"/>
+				<textFieldExpression><![CDATA[$F{lifeSustainingTherapyWithdrawn}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="211" y="348" width="43" height="20" uuid="337be0b9-7909-4e11-b529-d4ed53e5242d"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Reason:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="254" y="348" width="95" height="20" uuid="1a5652e2-01d1-40bd-89ff-2feac0e9e8e2"/>
+				<textFieldExpression><![CDATA[$F{reason}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="371" width="86" height="20" uuid="09987c95-c711-40f8-a7d1-e9514cc89ee5"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ICU readmission:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="87" y="371" width="35" height="20" uuid="60b95a57-c2a7-49b7-a4ed-d4c6e79ee1a7"/>
+				<textFieldExpression><![CDATA[$F{reAdmission}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="124" y="371" width="44" height="20" uuid="a1227a87-e053-4661-8d7b-91b76fcbb5fd"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[reason:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="168" y="369" width="258" height="20" uuid="f494eedb-ecc4-4def-a6b3-2f32f14276f3"/>
+				<textFieldExpression><![CDATA[$F{reasonofreadmission}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="427" y="369" width="41" height="20" uuid="1a8a3ff3-521c-4c29-8d60-b99db11f3e6d"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="468" y="371" width="42" height="20" uuid="63a7237b-18fc-4c40-9fa5-d14e8b61c224">
+					<printWhenExpression><![CDATA[(!$F{readmissionDate}.toString().equals("1970-01-01"))]]></printWhenExpression>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{readmissionDate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="391" width="91" height="20" uuid="93949f09-9e41-4877-9ca0-f097773b8ae2"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hospital Outcome:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="91" y="391" width="43" height="20" uuid="699bd562-a819-4df5-8e7f-2a71c17cb406"/>
+				<textFieldExpression><![CDATA[$F{hospOutcome}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="159" y="391" width="34" height="20" uuid="d01814f5-18e8-431f-a40c-2afaa977e786"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="193" y="391" width="42" height="20" uuid="ff422236-7ceb-428c-820d-149809afb44f">
+					<printWhenExpression><![CDATA[(!$F{DOD}.toString().equals("1970-01-01"))]]></printWhenExpression>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{DOD}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="78" y="411" width="46" height="20" uuid="186487e6-79dc-47ab-a663-3366fad83297"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ApacheII]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="125" y="411" width="30" height="20" uuid="77aed69d-1df7-4fc0-8652-d5e8dfefffff"/>
+				<textFieldExpression><![CDATA[$F{ApacheII}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="411" width="74" height="20" uuid="3f4b2ae9-72ce-4437-bb09-1c3a4a78d76e"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[ICU SCORES:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="158" y="411" width="45" height="20" uuid="9ac27d9f-70eb-408d-b6cf-0866e37606b2"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[SAPS]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="204" y="411" width="30" height="20" uuid="24a1d38a-75aa-4d30-a6fc-ab4da2a2dc53"/>
+				<textFieldExpression><![CDATA[$F{SAPS}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="242" y="411" width="45" height="20" uuid="b638da25-49d6-4498-a885-bb6c3b201671"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[qSOFA]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="287" y="411" width="30" height="20" uuid="6ed1b3c2-e2c8-400a-98ec-ba1ac8d08364"/>
+				<textFieldExpression><![CDATA[$F{qSOFA}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="332" y="412" width="98" height="20" uuid="a881f0f4-cad6-4df4-b685-818d60e8c35a"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nutrition risk score]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="430" y="412" width="45" height="20" uuid="20548f42-c91f-4f70-a635-3acb46df3f60"/>
+				<textFieldExpression><![CDATA[$F{nutritionriskscore}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="2" y="432" width="73" height="20" uuid="801ee658-8ea0-40fc-90e5-b70f26a17d7e"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Airway type:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="77" y="433" width="72" height="20" uuid="f2ae2ba8-2513-442f-8c5c-1d11aeeb9094"/>
+				<textFieldExpression><![CDATA[$F{airwaytype}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="158" y="433" width="71" height="20" uuid="5977255d-225e-40cc-b32b-6f2797b0910d"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Intubation At:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="230" y="433" width="77" height="20" uuid="4246e1dc-13b0-4ec9-8bd6-28dcc6306bf3"/>
+				<textFieldExpression><![CDATA[$F{intubationat}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="323" y="433" width="86" height="20" uuid="9166ddb7-dc3e-47ea-ab64-bd689d4e5b9b"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Self extubation]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="410" y="433" width="41" height="20" uuid="0e721d5c-b498-4322-b9b9-f22807e310f3"/>
+				<textFieldExpression><![CDATA[$F{selfextubation}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="460" width="86" height="20" uuid="db0bfac2-ca7a-4db1-a979-0aed34027ccb"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ventilation Days:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="87" y="460" width="38" height="20" uuid="2fe6525c-35c1-4b09-ae00-22215500c76a"/>
+				<textFieldExpression><![CDATA[$F{ventilationdays}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="134" y="460" width="41" height="20" uuid="6f012e52-446a-49d7-a100-ca0ed92a83e1"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Vap]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="178" y="460" width="39" height="20" uuid="4f64061a-7cbb-4308-a2ba-5df5e142cefc"/>
+				<textFieldExpression><![CDATA[$F{vap}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="480" width="50" height="20" uuid="9440f330-92ff-4710-941e-c89cdaafab70"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[CVP days:]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="53" y="480" width="50" height="20" uuid="c72dcfbe-eb1c-4d37-9be1-f5e2cc3bdb49"/>
+				<textFieldExpression><![CDATA[$F{cvpdays}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="132" y="480" width="41" height="20" uuid="336c1e93-9d43-4c9b-b928-a6f77a423a31"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[CLABSI:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="177" y="480" width="56" height="20" uuid="de551ad0-febd-48fc-9066-adfdf66d5347"/>
+				<textFieldExpression><![CDATA[$F{clabsi}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="3" y="532" width="75" height="20" uuid="ec6e3806-c1c3-4e08-b433-9114513ec8c1"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Complications:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="78" y="532" width="477" height="53" uuid="2e6d2da5-30f6-4903-b797-8eef68e92261"/>
+				<textFieldExpression><![CDATA[$F{complications}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="590" width="121" height="20" uuid="c23156a3-eed7-4e7d-9007-6cdf184a2dd0"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Probable cause of death:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="122" y="590" width="152" height="20" uuid="f40c3f2d-34d2-4934-aab0-8ed677d1a5b9"/>
+				<textFieldExpression><![CDATA[$F{pcauseofdeath}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="610" width="55" height="20" uuid="0515b158-0152-4156-94fc-b9495b59651c"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Brain scan]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="57" y="610" width="190" height="20" uuid="d20c2b7b-c86d-421a-8ae2-ae447e7dcb7c"/>
+				<textFieldExpression><![CDATA[$F{Brainscan}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="291" y="609" width="58" height="20" uuid="e281a41d-0bca-4f8b-9cc5-540f6d8ec903"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Repeat scan:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="349" y="610" width="204" height="20" uuid="4d12eb41-8146-4b45-91af-8e2789e0d1f3"/>
+				<textFieldExpression><![CDATA[$F{repeatscan}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="101" y="631" width="13" height="20" uuid="f9774e4c-4f31-476f-beb7-f21c1b92d57c"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[E]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="114" y="631" width="20" height="20" uuid="ac6e932b-1b80-4976-8eea-f8422912f1ae"/>
+				<textFieldExpression><![CDATA[$F{Escore}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="1" y="631" width="100" height="20" uuid="ef04e43e-9398-485b-8a19-4e640b48d946"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[FOUR SCORE:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="147" y="631" width="13" height="20" uuid="d4db50cf-bc6a-41d8-84f0-1ba1df8ca0f5"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[M]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="160" y="631" width="20" height="20" uuid="2e67bcbc-a416-4292-9338-fa57d4a266a1"/>
+				<textFieldExpression><![CDATA[$F{Mscore}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="193" y="631" width="13" height="20" uuid="dc53f5e9-42fd-4240-a3c0-d3b1536aee27"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[B]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="205" y="631" width="20" height="20" uuid="49ef1be7-624f-4f1c-af15-cfe70c70fdd8"/>
+				<textFieldExpression><![CDATA[$F{Bscore}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="241" y="630" width="13" height="20" uuid="a9362d26-3d81-46e6-af3d-4528457d3cf4"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[R]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="254" y="630" width="20" height="20" uuid="6535b158-7d48-48ec-b502-091c3dcc142b"/>
+				<textFieldExpression><![CDATA[$F{Rscore}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="292" y="629" width="64" height="20" uuid="6f6e4450-fc42-4762-a024-0edbea58c9d2"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total score]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="358" y="629" width="45" height="20" uuid="ab4a7674-df8a-4873-94f9-8259833f7d70"/>
+				<textFieldExpression><![CDATA[$F{totalscore}]]></textFieldExpression>
+			</textField>
+			<subreport>
+				<reportElement x="74" y="31" width="180" height="100" uuid="4edcb071-094d-4f9a-b3ef-2175b0c1ccec"/>
+				<subreportParameter name="hospno">
+					<subreportParameterExpression><![CDATA[$F{hospno}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA["C:\\Users\\Bilal\\Desktop\\ICUsystem\\src\\report\\type.jasper"]]></subreportExpression>
+			</subreport>
+			<subreport>
+				<reportElement x="234" y="31" width="200" height="100" uuid="52bbcd48-d762-4c19-b460-688dbf8d85d4"/>
+				<subreportParameter name="hospno">
+					<subreportParameterExpression><![CDATA[$F{hospno}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA["C:\\Users\\Bilal\\Desktop\\ICUsystem\\src\\report\\comorbids.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+		<band height="606" splitType="Prevent">
+			<subreport>
+				<reportElement x="-18" y="0" width="589" height="100" uuid="8e55a7ba-79a4-4212-801e-bdf17d664a1a"/>
+				<subreportParameter name="hospno">
+					<subreportParameterExpression><![CDATA[$F{hospno}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA["C:\\Users\\Bilal\\Desktop\\ICUsystem\\src\\report\\report1.jasper"]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+</jasperReport>
